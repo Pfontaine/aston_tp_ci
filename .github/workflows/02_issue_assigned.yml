@@ -1,0 +1,15 @@
+name: Issue assigned workflow
+
+on:
+  issues:
+    types: [assigned]
+
+jobs:
+  create_branch:
+    name: Create Branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: robvanderleek/create-issue-branch@main
+        name: Create Issue Branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
