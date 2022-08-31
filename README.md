@@ -3,8 +3,8 @@
 ## Tests
 
 - Test Issue to Branch : OK
-- Test Run Test : ??
-- Test Remove Branch : ??
+- Test Run Test : OK
+- Test Remove Branch : OK
 
 ## Description
 
