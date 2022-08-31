@@ -1,5 +1,11 @@
 # Template CI
 
+## Tests
+
+- Test Issue to Branch : OK
+- Test Run Test : ??
+- Test Remove Branch : ??
+
 ## Description
 
 Template pour permettre l'animation de cours CI et Tests Unitaires (voir branchesp lus bas).
