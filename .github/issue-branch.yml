@@ -1,0 +1,4 @@
+branchName: 'feature/${issue.title[0,64],}'
+gitSafeReplacementChar: '-'
+defaultBranch: 'develop'
+commentMessage: 'Branch ${branchName} created for issue: ${issue.title}'

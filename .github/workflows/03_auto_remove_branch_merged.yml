@@ -1,0 +1,19 @@
+name: Auto Remove Merged Branch after Pull Request
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [develop]
+
+jobs:
+  remove_branch:
+    runs-on: ubuntu-latest
+    name: Remove Branch
+    if: github.event.pull_request.merged == true
+    steps:
+      - uses: koj-co/delete-merged-action@master
+        name: Delete Branch
+        with:
+          branches: "!*, ${{ github.head_ref }}" 
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
